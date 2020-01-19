@@ -23,4 +23,40 @@ function App() {
   );
 }
 
-export default App;
+const
+name = 'Josh Perez',
+user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+},
+cname = 'acc',
+element = <h1 class={ cname }>Hello, { formatName(user) }!</h1>;
+
+function helloWorld() {
+  console.log(element)
+  return element
+}
+
+function formatName(user) {
+  return `${ user.firstName } ${ user.lastName }`;
+}
+
+export default helloWorld;
+
+class aaa {
+  x = 0;
+  y = 0;
+
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  speak() {
+    return this;
+  }
+
+  static eat() {
+    return this;
+  }
+}
